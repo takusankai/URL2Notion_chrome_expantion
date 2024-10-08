@@ -2,11 +2,21 @@
 <html>
 <head>
     <title>URL Reader</title>
-    <script src="popup.js" defer></script>
+    <style>
+        /* ポップアップの横幅を設定 */
+        body {
+            width: 500px; /* 必要に応じて横幅を調整 */
+        }
+    </style>
+    <script src="popup.js" type="module" defer></script>
 </head>
 <body>
     <h1>URL Reader</h1>
+    <label for="databaseSelect">Select Database:</label>
+    <select id="databaseSelect"></select>
     <button id="getInfo">Get Current Tab Info and DateTime</button>
     <div id="output"></div>
+    <div id="status"></div>
+    <div id="details"></div>
 </body>
 </html>

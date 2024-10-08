@@ -7,8 +7,12 @@
         "tabs",
         "activeTab"
     ],
+    "host_permissions": [
+        "https://api.notion.com/*"
+    ],
     "background": {
-        "service_worker": "URL_reader.js"
+        "service_worker": "URL_reader.js",
+        "type": "module"
     },
     "action": {
         "default_popup": "popup.html"
