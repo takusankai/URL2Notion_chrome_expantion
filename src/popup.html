@@ -2,18 +2,11 @@
 <html>
 <head>
     <title>URL Reader</title>
-    <script src="URL_reader.js"></script>
+    <script src="popup.js" defer></script>
 </head>
 <body>
     <h1>URL Reader</h1>
-    <button id="getInfo">Get Current Tab Info</button>
+    <button id="getInfo">Get Current Tab Info and DateTime</button>
     <div id="output"></div>
-    <script>
-        document.getElementById('getInfo').addEventListener('click', function() {
-        getCurrentTabInfo(function(url, title) {
-            document.getElementById('output').innerText = "URL: " + url + "\nTitle: " + title;
-        });
-        });
-    </script>
 </body>
 </html>
